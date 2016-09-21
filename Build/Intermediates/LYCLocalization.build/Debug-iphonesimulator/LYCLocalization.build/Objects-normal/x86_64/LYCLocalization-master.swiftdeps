@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "018c1d03c59e2638779c4a348f3d1ca5"
+build_time: [527740149, 567942000]
+inputs:
+  "/Users/ismael/Desktop/LYCLocalization/LYCLocalization/ViewController.swift": [527740146, 0]
+  "/Users/ismael/Desktop/LYCLocalization/LYCLocalization/AppDelegate.swift": [527740146, 0]
