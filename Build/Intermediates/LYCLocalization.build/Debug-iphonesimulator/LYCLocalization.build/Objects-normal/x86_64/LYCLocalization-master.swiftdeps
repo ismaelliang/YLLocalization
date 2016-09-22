@@ -1,6 +1,7 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "018c1d03c59e2638779c4a348f3d1ca5"
-build_time: [527740149, 567942000]
+options: "827fb7ae60790457b9fde979d069d8af"
+build_time: [527827315, 14984000]
 inputs:
-  "/Users/ismael/Desktop/LYCLocalization/LYCLocalization/ViewController.swift": [527740146, 0]
+  "/Users/ismael/Desktop/LYCLocalization/LYCLocalization/Classes/LYCLocalization.swift": [527827314, 0]
+  "/Users/ismael/Desktop/LYCLocalization/LYCLocalization/ViewController.swift": [527824853, 0]
   "/Users/ismael/Desktop/LYCLocalization/LYCLocalization/AppDelegate.swift": [527740146, 0]

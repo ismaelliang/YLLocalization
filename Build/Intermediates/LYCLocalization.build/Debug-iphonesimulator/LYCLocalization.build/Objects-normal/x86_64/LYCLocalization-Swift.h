@@ -111,6 +111,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Foundation;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -130,13 +132,24 @@ SWIFT_CLASS("_TtC15LYCLocalization11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+@class UITableView;
+@class UITableViewCell;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC15LYCLocalization14ViewController")
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified textLabel;
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified mainTableView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)refreshLabel;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

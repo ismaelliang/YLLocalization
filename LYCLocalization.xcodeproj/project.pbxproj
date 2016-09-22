@@ -12,6 +12,8 @@
 		2C26ED0B1D9227F2005EA2BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C26ED091D9227F2005EA2BD /* Main.storyboard */; };
 		2C26ED0D1D9227F2005EA2BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C26ED0C1D9227F2005EA2BD /* Assets.xcassets */; };
 		2C26ED101D9227F2005EA2BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C26ED0E1D9227F2005EA2BD /* LaunchScreen.storyboard */; };
+		2C26ED3A1D927FB8005EA2BD /* LYCLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C26ED331D927FB8005EA2BD /* LYCLocalization.swift */; };
+		2C26ED3B1D927FB8005EA2BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C26ED351D927FB8005EA2BD /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		2C26ED0C1D9227F2005EA2BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C26ED0F1D9227F2005EA2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C26ED111D9227F2005EA2BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C26ED331D927FB8005EA2BD /* LYCLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYCLocalization.swift; sourceTree = "<group>"; };
+		2C26ED361D927FB8005EA2BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C26ED371D927FB8005EA2BD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,8 @@
 		2C26ED041D9227F2005EA2BD /* LYCLocalization */ = {
 			isa = PBXGroup;
 			children = (
+				2C26ED2D1D927FB8005EA2BD /* Classes */,
+				2C26ED341D927FB8005EA2BD /* Locale */,
 				2C26ED051D9227F2005EA2BD /* AppDelegate.swift */,
 				2C26ED071D9227F2005EA2BD /* ViewController.swift */,
 				2C26ED091D9227F2005EA2BD /* Main.storyboard */,
@@ -62,6 +69,22 @@
 				2C26ED111D9227F2005EA2BD /* Info.plist */,
 			);
 			path = LYCLocalization;
+			sourceTree = "<group>";
+		};
+		2C26ED2D1D927FB8005EA2BD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C26ED331D927FB8005EA2BD /* LYCLocalization.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2C26ED341D927FB8005EA2BD /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				2C26ED351D927FB8005EA2BD /* Localizable.strings */,
+			);
+			path = Locale;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +130,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 2C26ECF91D9227F2005EA2BD;
 			productRefGroup = 2C26ED031D9227F2005EA2BD /* Products */;
@@ -123,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C26ED3B1D927FB8005EA2BD /* Localizable.strings in Resources */,
 				2C26ED101D9227F2005EA2BD /* LaunchScreen.storyboard in Resources */,
 				2C26ED0D1D9227F2005EA2BD /* Assets.xcassets in Resources */,
 				2C26ED0B1D9227F2005EA2BD /* Main.storyboard in Resources */,
@@ -136,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C26ED3A1D927FB8005EA2BD /* LYCLocalization.swift in Sources */,
 				2C26ED081D9227F2005EA2BD /* ViewController.swift in Sources */,
 				2C26ED061D9227F2005EA2BD /* AppDelegate.swift in Sources */,
 			);
@@ -158,6 +184,15 @@
 				2C26ED0F1D9227F2005EA2BD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2C26ED351D927FB8005EA2BD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C26ED361D927FB8005EA2BD /* en */,
+				2C26ED371D927FB8005EA2BD /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LYCLocalization/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyc.LYCLocalization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LYCLocalization/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyc.LYCLocalization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +336,7 @@
 				2C26ED161D9227F2005EA2BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
