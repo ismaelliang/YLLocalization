@@ -1,6 +1,6 @@
 # YLLocalization
 
-![alt tag](https://raw.githubusercontent.com/ismaelliang/YLLocalization/master/Gif/YLLocalization.gif)
+![Demo Gif](https://raw.githubusercontent.com/ismaelliang/YLLocalization/master/YLLocalization.gif)
 
 
 License
